@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Project</title>
+	<meta name="viewport" cotent="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Staatliches&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="./CircleType-master/dist/circletype.min.js"></script>
+
+</head>
+<body>
+	<nav>
+		<h1 class=logo>
+  			<span class="logo-wrapper">
+   				 <span class="logo-letters">My Portofolio</span>
+    			 <span class="line"></span>
+  			</span>
+		</h1>
+		<ul id="menu">
+			<li><a href="#" class="menu-item">Home</a></li>
+			<li><a href="#" class="menu-item">About</a></li>
+			<li><a href="#" class="menu-item">Contact</a></li>
+		</ul>
+		<div class="cursor"></div>
+		<label id="icon"> 
+			<i class="fas fa-bars"></i>
+		</label>
+	</nav>
+	
+	<div class="container-1">
+		<div class="parallax">
+			<div class="parallax-inner">
+				<h1 class="first-text">CREATE </h1>
+				<h1 class="second-text"> your <span class="colored">dream</span></h1>
+			</div>
+		</div>
+	</div>
+	<div class="container-2">
+		<div class="intro-title">
+			<h2>Let me show you my work...</h2>
+		</div>
+		<div class="move-on-scroll">
+			<h2>Java (Spring) - C - SQL - HTML - CSS - React JS</h2>
+		</div>
+		<div class="move-on-scroll2">
+			<h2>Hard Working - Friendly - Creative - Communicative - Organized - Open-minded</h2>
+		</div>
+		<div class="circular-text">
+			<span id="rotated">
+				 .. MUREȘAN .............. IOANA ............... DIANA ............. 
+			</span>
+			
+	</div>
+	<div class="container-3">
+		<div class="card-container">
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Online Medication Platform</h1>
+					<img src="./images/online-medication-platform.png" class="card-img">
+
+					<p class="card-description">This is a distributed application
+					which helps patients follow their medication plans and caregivers
+					to manage their patients. </p>
+
+					<button class="rm-btn b1 rm-rmv" onclick="showRm1()">Read more</button>
+					
+				</div>
+				
+			</div>
+			<div class="image-container first-img">
+
+				 
+			</div>
+			<div class="rm-container rm1">
+				<div class="close-rm c1">X</div>
+				<div class="rm-description">
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">
+						This project consists of 4 applications:<br>
+						1. Backend App - built using Java Spring <br>
+						2. Frontend App - built using React JS <br>
+						3. Notification Producer - sends messages to a RabbitMQ queue and the Backend  consumes them and sends them to the Frontend in real-time through WebSockets.  <br>
+						4. MedicationDispenser - is a Desktop app that communicates with the Backend through Hessian RPC. It displays the medication that needs to be taken and notifies the server if it was taken. 
+					</p>
+					 
+					<div class="icon-container">
+						  <div class="icon-item">
+						  	<i class="fab fa-java"></i>
+						  </div>
+						  <div class="icon-item">
+						  	<i class="fab fa-react"></i>
+						  </div>
+					</div>
+					<div class="view-code">
+						<a href="https://gitlab.com/ds2020_30642_muresan_diana" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="card-container">
+			 
+			<div class="image-container second-img">
+				 
+			</div>
+
+			 
+			<div class="card-item"> 
+				<div class="card">
+					<h1 class="card-heading">MM Cakes</h1>
+					<img src="./images/cake-site.png" class="card-img">
+
+					<p class="card-description">This website was built for MMCakes pastry so that clients can see the products, information about the business and contact information.</p>
+
+					<button class="rm-btn b2 rm-rmv" onclick="showRm2()">Read more</button>
+					
+				</div>
+			</div>	
+			<div class="rm-container rm-e rm2">
+				<div class="close-rm c2">X</div>
+				<div class="rm-description">
+					 
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">
+						 This was the first project in which I had the opportunity to work with the "heart" of the Front End development, also known as HTML, CSS and JavaScript.
+						 The website consists of 9 HTML pages styled using CSS and I also used a few JavaScript elements. For the website to look good on all devices I designed it to be responsive.  
+					</p>
+					<div class="icon-container">
+						  <div class="icon-item">
+						  	<i class="fab fa-html5"></i>
+						  </div>
+						  <div class="icon-item">
+						  	<i class="fab fa-css3"></i>
+						  </div>
+						  <div class="icon-item">
+						  	<i class="fab fa-js"></i>
+						  </div>
+						 
+					</div>
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/WebsiteMMCakes" target="_blank"><button class="rm-btn">View Code</button></a>
+						<a href="https://mmcakes.netlify.app/" target="_blank"><button class="rm-btn">View Demo</button></a>
+					</div>
+				</div>
+				
+			</div>
+
+			 
+			 
+		</div>
+		<div class="card-container"> 
+
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Animal Center Management</h1>
+					<img src="./images/animal-center.png" class="card-img">
+
+					<p class="card-description">FurCare is an app where doctors can see the information about the animals they treat and nurses can make appointments or register a new animal.</p>
+
+					<button class="rm-btn b3 rm-rmv" onclick="showRm3()">Read more</button>
+					
+				</div>
+				
+			</div>
+			<div class="image-container third-img">
+
+				 
+			</div>
+			<div class="rm-container rm3">
+				<div class="close-rm c3">X</div>
+				<div class="rm-description">
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">
+						 This is a client-server app which means that there are 2 separate applications and they communicate through sockets. The logic of the application is implemented in the server app by the Persistence Layer and the Model Layer and the Presentation Layer is implemented in the client app through Views and Controllers. For the database I used the MySQL Workbench tool and for mapping I used the Hibernate framework. The GUI was developed using Java SWING toolkit. The application displays the option for choosing between 3 languages which was implemented using the Observer Pattern.
+					</p>
+					<div class="icon-container">
+						 <div class="icon-item" >
+						 	<i class="fab fa-java"></i>
+
+						 </div>
+						 <div class="icon-item">
+						 	<i class="fas fa-database"></i>
+						 </div>
+						 <div class="icon-item">
+						 	<i class="fas fa-server"></i>
+						 </div>
+						 
+					</div>
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/AnimalCenterManagement" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="card-container"> 
+			<div class="image-container fourth-img">
+
+				 
+			</div>
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Lambda Expressions and Stream Processing</h1>
+					<img src="./images/lambda-expr.png" class="card-img">
+
+					<p class="card-description"> This Java App shows the power of Stream Processing and the output generated is a list of daily  human activities that don't meet different criteria.</p>
+
+					<button class="rm-btn b4 rm-rmv" onclick="showRm4()">Read more</button>
+					
+				</div>
+				
+			</div>
+			 
+			<div class="rm-container rm-e rm4">
+				<div class="close-rm c4">X</div>
+				<div class="rm-description">
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">
+						The main purpose of this app was to perform different operations on the data using lambda expressions. The first step was reading the data from the file in the form of a stream of strings and performing the split operation through a lambda expression. After getting the list of activities I executed different filter operations to obtain the data such asa the number of monitored days, the number of appearances for each activity, the number of appearances for each activity per day and the duration of each ativity. 
+					</p>
+					<div class="icon-container">
+						 <div class="icon-item" >
+						 	<i class="fab fa-java"></i>
+
+						 </div>
+						 
+					</div>
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/LambdaExpressions" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="card-container"> 
+
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Restaurant Management</h1>
+					<img src="./images/restaurant-management.png" class="card-img">
+
+					<p class="card-description">There are 3 types of users that can log in to this app: the administrator can modify the menu, the waiter can make orders and the chief receives the orders.</p>
+
+					<button class="rm-btn b5 rm-rmv" onclick="showRm5()">Read more</button>
+					
+				</div>
+				
+			</div>
+			<div class="image-container fifth-img">
+
+				 
+			</div>
+			<div class="rm-container rm5">
+				<div class="close-rm c5">X</div>
+				<div class="rm-description">
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">
+						This app was built based on the layered architecture. The Data Access Layer is responsible for the serialization and deserialization of the data. The Business Layer encapsulates the logic of the application and the GUI is implemented in the Presentation Layer.
+						When the applications launches the menu items from the file will be deserialized and displayed in the interface. When a new menu item is added, it is also serialized in the file. The Composite Pattern was used for modelling the menu items and the Observer Pattern for notifying the chef when a new order is made.
+						
+					</p>
+					<div class="icon-container">
+						 <div class="icon-item" >
+						 	<i class="fab fa-java"></i>
+
+						 </div>
+						 <div class="icon-item">
+						 	<i class="fas fa-file-alt"></i>
+						 </div>
+					</div>
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/RestaurantManagement" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="card-container"> 
+			<div class="image-container sixth-img">
+
+				 
+			</div>
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Order Management</h1>
+					<img src="./images/order-management.png" class="card-img">
+
+					<p class="card-description">This app facilitates the order management of a warehouse by offering CRUD operations on the information about products, clients and orders.</p>
+
+					<button class="rm-btn b6 rm-rmv" onclick="showRm6()">Read more</button>
+					
+				</div>
+				
+			</div>
+			 
+			<div class="rm-container rm-e rm6">
+				<div class="close-rm c6">X</div>
+				<div class="rm-description">
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">This type of application requires a layered architecture. The Data Access Layer is the lowest layer and is responsible with the database connection and the query logic. The Model Layer is used to create objects that store and retrieve the data from the database. The Business Logic Layer encapsulates the logic of the application and makes the connection between the Data Access Layer and the Presentation Layer. The GUI is implemented in the Presentation Layer.
+						For the database I used the MySQL Workbench tool and the Java application has access to the database through the JDBC. 
+					</p>
+					<div class="icon-container">
+						 <div class="icon-item" >
+						 	<i class="fab fa-java"></i>
+
+						 </div>
+						 <div class="icon-item">
+						 	<i class="fas fa-database"></i>
+						 </div>
+					</div>
+
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/OrderManagement" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="card-container"> 
+
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Queuing System Simulation</h1>
+					<img src="./images/queue-system.png" class="card-img">
+
+					<p class="card-description">A given number of queues can be simulated with this app by giving a number of tasks and some time parameters.</p>
+
+					<button class="rm-btn b7 rm-rmv" onclick="showRm7()">Read more</button>
+					
+				</div>
+				
+			</div>
+			<div class="image-container seventh-img">
+
+				 
+			</div>
+			<div class="rm-container rm7">
+				<div class="close-rm c7">X</div>
+				<div class="rm-description">
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">For this app I implemented a simulation system that uses threads as servers 
+					and a component that generates a number of tasks with random times of arrival in the given interval. Each task has a processing time and will be assigned to a server. Each thread will be asleep for a period of time equal with the processing time of the task and after 
+			that the task will be removed from the queue. The strategy of the scheduler component is 'shortest-queue' which means that the tasks are assigned to the servers which are less busy.</p>
+					<div class="icon-container">
+						<div class="icon-item" >
+						 	<i class="fab fa-java"></i>
+						 </div>
+						 <div class="icon-item">
+						 	<i class="fas fa-server"></i>
+						 </div>
+					</div>
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/QueueSystemSimulation" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="card-container"> 
+			<div class="image-container eighth-img">
+
+				 
+			</div>
+			<div class="card-item">
+				<div class="card">
+					<h1 class="card-heading">Polynomial Calculator</h1>
+					<img src="./images/calculator-polinom.png" class="card-img">
+
+					<p class="card-description">This calculator performs different operations such as addition, difference, multiplication, division, derivation and integration on polynomials.</p>
+
+					<button class="rm-btn b8 rm-rmv" onclick="showRm8()">Read more</button>
+					
+				</div>
+				
+			</div>
+			 
+			<div class="rm-container rm-e rm8">
+				<div class="close-rm c8">X</div>
+				<div class="rm-description">
+					<p class="short-description">This app was my first real contact with a Java project where I was able to 
+					put into practice all the information I gathered about this object-oriented language during
+					the OOP class. </p>
+					<h2 class="sh-desc-title"><i class="fas fa-cog tech-icon"></i>Technical description</h2>
+					<p class="short-description">The app was built using the MVC architecture. For the graphic interface
+					I used the Swing toolkit. The implementation is based on string parsing to split the given polynomials into
+					monomials. Then, the corresponding operation is applied to the monomials and the resulting polynomial is
+					displayed. </p>
+					 
+					 <div class="icon-item" >
+					 	<i class="fab fa-java"></i>
+					 </div>
+					<div class="view-code">
+						<a href="https://github.com/dianamuresan23/PolynomialCalculator" target="_blank"><button class="rm-btn">View Code</button></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+	<script src="./javascript/app.js"></script>
+</body>
+</html>
